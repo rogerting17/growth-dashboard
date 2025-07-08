@@ -1,7 +1,8 @@
-
 function updateData() {
-  fetch("https://your-render-api.onrender.com/update?token=YOUR_SECRET_TOKEN", { method: "POST" })
-    .then(res => res.json())
-    .then(data => alert(data.message || "✅ 更新完成"))
-    .catch(err => alert("❌ 更新失敗"));
+  fetch("https://growth-api-be3i.onrender.com/update?token=Chip2150", {
+    method: "POST"
+  })
+  .then(res => res.json())
+  .then(data => alert(data.message || "✅ 更新完成"))
+  .catch(err => alert("❌ 更新失敗"));
 }
